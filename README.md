@@ -77,7 +77,7 @@ streamlit run app/app.py
 Or run everything containerized:
 
 ```powershell
-docker compose up --build    # app at http://localhost:8501
+docker compose up --build    # app at http://localhost:8501 (override with APP_PORT=... if taken)
 ```
 
 ## Evaluation
