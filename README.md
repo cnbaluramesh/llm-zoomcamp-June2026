@@ -12,6 +12,12 @@ cites the source article, chunk, and URL.
 
 Built as a capstone project for the LLM Zoomcamp.
 
+## Preview
+
+![SpaceQuest chat interface with grounded answer and sources](docs/screenshot_chat.png)
+
+![Monitoring dashboard with usage, latency, method and feedback charts](docs/screenshot_dashboard.png)
+
 ## Problem statement
 
 General-purpose chatbots answer space-exploration questions from pre-training memory, so facts
@@ -28,6 +34,7 @@ quality across two prompt designs, with the best variant shipped (see [Evaluatio
 
 - **Hybrid retrieval**: BM25, dense vectors, and Reciprocal Rank Fusion — evaluated head-to-head
 - **Query rewriting** option (LLM rewrites the question before retrieval; evaluated)
+- **LLM document re-ranking** (`src/rerank.py`, evaluated)
 - **Grounded generation** with inline citations `[article title]` and chunk-level source list
 - **Streamlit interface**: chat UI + monitoring dashboard
 - **User feedback** (👍/👎) collected per query
@@ -86,9 +93,14 @@ hit-rate@5 and MRR@5 over `data/eval/retrieval_results.json`:
 | BM25 only             | **0.9885**| **0.9636** |
 | Hybrid (RRF)          | 0.9770    | 0.9626 |
 | Hybrid + query rewrite| 0.9770    | 0.9540 |
+| BM25 + LLM re-rank    | 0.9885    | 0.8820 |
+| Hybrid + LLM re-rank  | 0.9770    | 0.9253 |
 
-BM25 won on this corpus (Wikipedia prose matches keyword queries well; articles are title-heavy),
-so it is the default. Hybrid search and query rewriting were both evaluated per best practices.
+BM25 won on this corpus (Wikipedia prose matches keyword queries well), so it is the default.
+Hybrid search, query rewriting, and LLM re-ranking (`src/rerank.py`, GPT-4o-mini scoring of
+candidate chunks) were all evaluated per the best-practices criteria. Re-ranking kept hit-rate
+identical but lowered MRR here — chunk order already matches the lexical ranking — so the plain
+BM25 ordering is shipped rather than the re-ranked one.
 
 ### LLM output evaluation (`eval/eval_llm.py`)
 

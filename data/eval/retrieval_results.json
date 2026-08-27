@@ -22,5 +22,17 @@
     "hit_rate": 0.977,
     "mrr": 0.954,
     "n_questions": 87
+  },
+  {
+    "method": "bm25_rerank",
+    "hit_rate": 0.9885,
+    "mrr": 0.882,
+    "n_questions": 87
+  },
+  {
+    "method": "hybrid_rerank",
+    "hit_rate": 0.977,
+    "mrr": 0.9253,
+    "n_questions": 87
   }
 ]
