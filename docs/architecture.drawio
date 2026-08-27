@@ -1,0 +1,138 @@
+<mxfile host="app.diagrams.net" modified="2026-08-27T00:00:00.000Z" agent="SpaceQuest" version="24.0.0">
+  <diagram id="spacequest-arch" name="SpaceQuest Architecture">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ============ INGESTION ============ -->
+        <mxCell id="ing" value="INGESTION PIPELINE (dlt)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;fontStyle=1;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="360" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="wiki" value="Wikipedia API&#10;(wikipedia-api)&#10;30 articles: Apollo, Shuttle,&#10;ISS, JWST, rovers, Mir..." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf" vertex="1" parent="1">
+          <mxGeometry x="70" y="90" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="corpus" value="data/corpus/*.json&#10;(committed to repo)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#6c8ebf" vertex="1" parent="1">
+          <mxGeometry x="120" y="200" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dlt" value="dlt pipeline (ingest_dlt.py)&#10;chunking: 300 words / 50 overlap&#10;762 chunks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf" vertex="1" parent="1">
+          <mxGeometry x="70" y="310" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="wiki" target="corpus"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="corpus" target="dlt"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ============ KNOWLEDGE BASE ============ -->
+        <mxCell id="kb" value="KNOWLEDGE BASE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;fontStyle=1;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="470" y="40" width="300" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="sqlite" value="SQLite (data/knowledge_base__kb.db)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#82b366;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="510" y="90" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tables" value="kb.chunks (text, title, url, chunk_id)&#10;kb.chunks.embedding (OpenAI&#10;text-embedding-3-small, 1536-d)&#10;kb.documents&#10;query_log / feedback (monitoring)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;align=left;spacingLeft=12" vertex="1" parent="1">
+          <mxGeometry x="495" y="210" width="250" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="idx" value="indexing.py&#10;embeds chunks via OpenAI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366" vertex="1" parent="1">
+          <mxGeometry x="495" y="370" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="dlt" target="sqlite"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="idx" target="tables"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ============ RETRIEVAL ============ -->
+        <mxCell id="ret" value="RETRIEVAL (src/retrieval.py)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;verticalAlign=top;fontStyle=1;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="840" y="40" width="380" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="rewrite" value="Query rewriting (optional)&#10;gpt-4o-mini rewrites/expands question" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00" vertex="1" parent="1">
+          <mxGeometry x="870" y="90" width="320" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="bm25" value="BM25 (rank-bm25)&#10;sparse lexical search" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00" vertex="1" parent="1">
+          <mxGeometry x="870" y="180" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dense" value="Dense search&#10;cosine sim on embeddings" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00" vertex="1" parent="1">
+          <mxGeometry x="1040" y="180" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rrf" value="Reciprocal Rank Fusion (RRF)&#10;fused top-k" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00" vertex="1" parent="1">
+          <mxGeometry x="930" y="280" width="200" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="rerank" value="LLM re-ranking (src/rerank.py)&#10;gpt-4o-mini scores chunks 0-3&#10;(evaluated, not default)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;dashed=1" vertex="1" parent="1">
+          <mxGeometry x="930" y="360" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="sqlite" target="bm25"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="tables" target="dense"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="bm25" target="rrf"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="dense" target="rrf"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;dashed=1;" edge="1" parent="1" source="rrf" target="rerank"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="rewrite" target="bm25"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="rewrite" target="dense"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ============ GENERATION ============ -->
+        <mxCell id="gen" value="GENERATION (src/generate.py)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;verticalAlign=top;fontStyle=1;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="1290" y="40" width="280" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx" value="Context builder&#10;top-5 chunks + titles + URLs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6" vertex="1" parent="1">
+          <mxGeometry x="1320" y="90" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="llm" value="OpenAI gpt-4o-mini&#10;grounded prompt (PROMPT_V1,&#10;eval-winner of v1 vs v2)&#10;citations [title], refusal if absent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6" vertex="1" parent="1">
+          <mxGeometry x="1320" y="180" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ans" value="Answer + sources&#10;(doc_title, url, chunk_id)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6" vertex="1" parent="1">
+          <mxGeometry x="1320" y="300" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="rrf" target="ctx"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e13" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="ctx" target="llm"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e14" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="llm" target="ans"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ============ INTERFACE ============ -->
+        <mxCell id="ui" value="INTERFACE + MONITORING" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;verticalAlign=top;fontStyle=1;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="470" y="540" width="660" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="chat" value="Streamlit Chat tab&#10;question input · retrieval method selector&#10;rewrite checkbox · answer + citations&#10;👍 / 👎 feedback buttons" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450" vertex="1" parent="1">
+          <mxGeometry x="500" y="590" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="dash" value="Streamlit Monitoring tab&#10;KPIs (volume, latency, tokens, 👍/👎)&#10;+ 5 charts: questions/day, latency,&#10;method split, top docs, feedback" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450" vertex="1" parent="1">
+          <mxGeometry x="820" y="590" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="cli" value="CLI (scripts/ask.py)&#10;terminal Q&amp;A + feedback" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450" vertex="1" parent="1">
+          <mxGeometry x="500" y="750" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mon" value="monitoring.py&#10;logs every query + feedback to SQLite" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450" vertex="1" parent="1">
+          <mxGeometry x="820" y="750" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="ans" target="chat"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e16" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="cli" target="mon"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e17" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="chat" target="mon"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e18" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="mon" target="dash"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ============ EVALUATION ============ -->
+        <mxCell id="ev" value="EVALUATION" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalAlign=top;fontStyle=1;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="40" y="540" width="360" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="gt" value="build_ground_truth.py&#10;87 LLM-generated Q&amp;A pairs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656" vertex="1" parent="1">
+          <mxGeometry x="70" y="590" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="retev" value="eval_retrieval.py&#10;6 variants: vector / bm25 / hybrid /&#10;+rewrite / +rerank — hit-rate@5, MRR@5&#10;winner: BM25 (0.9885) → shipped" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;align=left;spacingLeft=12" vertex="1" parent="1">
+          <mxGeometry x="70" y="680" width="300" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="llev" value="eval_llm.py&#10;LLM-judge: 2 prompt variants on&#10;correctness + groundedness (0-5)&#10;winner: PROMPT_V1 → shipped" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;align=left;spacingLeft=12" vertex="1" parent="1">
+          <mxGeometry x="70" y="800" width="300" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="gt" target="retev"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e20" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="gt" target="llev"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ============ DEPLOYMENT ============ -->
+        <mxCell id="dep" value="DEPLOYMENT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalAlign=top;fontStyle=1;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="1190" y="540" width="380" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="docker" value="Dockerfile (python:3.12-slim)&#10;docker-compose.yml: app service&#10;data/ + logs/ volumes, .env secrets&#10;APP_PORT configurable (default 8501)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;align=left;spacingLeft=12" vertex="1" parent="1">
+          <mxGeometry x="1220" y="590" width="320" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- OpenAI boundary note -->
+        <mxCell id="openai" value="OpenAI API (requires OPENAI_API_KEY in .env)&#10;embeddings · gpt-4o-mini generation · rewrite · rerank · judge" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;dashed=1;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="1190" y="780" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" style="edgeStyle=orthogonalEdgeStyle;dashed=1;" edge="1" parent="1" source="llm" target="openai"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

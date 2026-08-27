@@ -43,6 +43,8 @@ quality across two prompt designs, with the best variant shipped (see [Evaluatio
 
 ## Architecture
 
+Detailed diagram: [`docs/architecture.drawio`](docs/architecture.drawio) (open at [app.diagrams.net](https://app.diagrams.net)).
+
 ```
 Wikipedia articles (data/corpus)
    └─ dlt pipeline → chunking (300 words, 50 overlap) → SQLite kb.chunks
