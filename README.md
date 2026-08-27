@@ -43,7 +43,9 @@ quality across two prompt designs, with the best variant shipped (see [Evaluatio
 
 ## Architecture
 
-Detailed diagram: [`docs/architecture.drawio`](docs/architecture.drawio) (open at [app.diagrams.net](https://app.diagrams.net)).
+![SpaceQuest architecture: ingestion, knowledge base, hybrid retrieval, generation, interface, monitoring, evaluation](docs/architecture.png)
+
+Editable diagram: [`docs/architecture.drawio`](docs/architecture.drawio) (open at [app.diagrams.net](https://app.diagrams.net)).
 
 ```
 Wikipedia articles (data/corpus)
