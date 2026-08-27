@@ -1,0 +1,26 @@
+[
+  {
+    "method": "vector",
+    "hit_rate": 0.9655,
+    "mrr": 0.954,
+    "n_questions": 87
+  },
+  {
+    "method": "bm25",
+    "hit_rate": 0.9885,
+    "mrr": 0.9636,
+    "n_questions": 87
+  },
+  {
+    "method": "hybrid",
+    "hit_rate": 0.977,
+    "mrr": 0.9626,
+    "n_questions": 87
+  },
+  {
+    "method": "hybrid_rewrite",
+    "hit_rate": 0.977,
+    "mrr": 0.954,
+    "n_questions": 87
+  }
+]

@@ -1,0 +1,437 @@
+[
+  {
+    "question": "What was the goal proposed by Kennedy for the Apollo program?",
+    "answer": "The goal proposed by Kennedy was to achieve the crewed Moon landing before the decade was out, landing a man on the Moon and returning him safely to the Earth.",
+    "doc_title": "Apollo program"
+  },
+  {
+    "question": "Who was the Apollo Program Director from January 1964 until the first human landing in July 1969?",
+    "answer": "General Samuel C. Phillips was the Apollo Program Director from January 1964 until the first human landing in July 1969.",
+    "doc_title": "Apollo program"
+  },
+  {
+    "question": "How many astronauts were assigned to fly missions in the Apollo program?",
+    "answer": "Thirty-two astronauts were assigned to fly missions in the Apollo program.",
+    "doc_title": "Apollo program"
+  },
+  {
+    "question": "What is the purpose of the Lunar Codex in the Artemis program?",
+    "answer": "The Lunar Codex is an archive of cultural works, intended to be sent to the moon from creators across the world.",
+    "doc_title": "Artemis program"
+  },
+  {
+    "question": "When did the Artemis I mission take place?",
+    "answer": "The Artemis I mission took place on November 16, 2022.",
+    "doc_title": "Artemis program"
+  },
+  {
+    "question": "What types of spacesuits are used in the Artemis program?",
+    "answer": "The Artemis program uses the Orion Crew Survival System (OCSS) for launch and entry, and a next-generation extravehicular mobility unit (EMU) for lunar surface operations.",
+    "doc_title": "Artemis program"
+  },
+  {
+    "question": "What did the first NASA astronauts comment about their flight to Moscow regarding the Baikonur Cosmodrome?",
+    "answer": "They commented that on their evening flight to Moscow they had seen lights on launch pads and related complexes for more than 15 minutes, and according to astronaut Thomas Stafford, 'that makes Cape Kennedy look very small.'",
+    "doc_title": "Baikonur Cosmodrome"
+  },
+  {
+    "question": "What was the original name of the region where the Baikonur Cosmodrome is located before it was established?",
+    "answer": "The name Baikonur was the name of the Tyuratam region before the establishment of the cosmodrome.",
+    "doc_title": "Baikonur Cosmodrome"
+  },
+  {
+    "question": "What environmental impact was noted by Russian scientist Afanasiy Ilich Tobonov in the 1990s?",
+    "answer": "He concluded that the mass deaths of birds and wildlife in the Sakha Republic were noted only along the flight paths of space rockets launched from the Baikonur cosmodrome.",
+    "doc_title": "Baikonur Cosmodrome"
+  },
+  {
+    "question": "What was the total amount of funding awarded to Boeing for the Starliner program under various contracts?",
+    "answer": "$92.3 million under CCDev 2 in 2011, $460 million under the CCiCap program in 2012, and $9.9 million under the CPC in 2013, totaling approximately $562.2 million.",
+    "doc_title": "Boeing Starliner"
+  },
+  {
+    "question": "What was the reason for NASA's decision to delay the announcement of the CCtCap contract?",
+    "answer": "William H. Gerstenmaier believed that selecting just one company would undermine the goals of fostering competition and redundancy in the Commercial Crew Program.",
+    "doc_title": "Boeing Starliner"
+  },
+  {
+    "question": "What issues did Boeing face with the oxidizer valves in the Starliner program?",
+    "answer": "The temperature controls required for effective pulses of fuel and oxidizer through these valves were not at a consistent level NASA deemed acceptable.",
+    "doc_title": "Boeing Starliner"
+  },
+  {
+    "question": "What was the primary purpose of the Cassini–Huygens mission?",
+    "answer": "The primary purpose of the Cassini–Huygens mission was to send a space probe to study the planet Saturn and its system, including its rings and natural satellites.",
+    "doc_title": "Cassini–Huygens"
+  },
+  {
+    "question": "When did the Cassini probe enter Saturn's orbit?",
+    "answer": "The Cassini probe entered Saturn's orbit on July 1, 2004.",
+    "doc_title": "Cassini–Huygens"
+  },
+  {
+    "question": "What was the fate of the Cassini probe at the end of its mission?",
+    "answer": "At the end of its mission, Cassini's trajectory took it into Saturn's upper atmosphere where it burned up to prevent any risk of contaminating Saturn's moons.",
+    "doc_title": "Cassini–Huygens"
+  },
+  {
+    "question": "When was the Curiosity rover launched?",
+    "answer": "Curiosity was launched from Cape Canaveral, Florida, on November 26, 2011, at 15:02:00 UTC.",
+    "doc_title": "Curiosity (rover)"
+  },
+  {
+    "question": "What is the main scientific goal of the Mars Science Laboratory mission?",
+    "answer": "The main scientific goals of the MSL mission include an investigation of the Martian climate and geology, an assessment of whether the selected field site inside Gale has ever offered environmental conditions favorable for microbial life, and planetary habitability studies in preparation for human exploration.",
+    "doc_title": "Curiosity (rover)"
+  },
+  {
+    "question": "What is the name of the camera on Curiosity's robotic arm that acquires microscopic images?",
+    "answer": "The camera on Curiosity's robotic arm that acquires microscopic images is called MAHLI.",
+    "doc_title": "Curiosity (rover)"
+  },
+  {
+    "question": "What is extravehicular activity (EVA)?",
+    "answer": "Extravehicular activity (EVA) is any activity performed by an astronaut in outer space outside of a spacecraft.",
+    "doc_title": "Extravehicular activity"
+  },
+  {
+    "question": "Who conducted the first spacewalk and when?",
+    "answer": "Alexei Leonov conducted the first spacewalk on March 18, 1965, during the Voskhod 2 mission.",
+    "doc_title": "Extravehicular activity"
+  },
+  {
+    "question": "What procedure did NASA employ to reduce the risk of decompression sickness during EVAs from the International Space Station?",
+    "answer": "NASA employed a camp-out procedure to reduce the risk of decompression sickness during EVAs from the International Space Station.",
+    "doc_title": "Extravehicular activity"
+  },
+  {
+    "question": "What is the payload capacity of the Falcon 9 to low Earth orbit?",
+    "answer": "Approximately 9,500 kilograms (20,900 lb).",
+    "doc_title": "Falcon 9"
+  },
+  {
+    "question": "When did the Falcon 9 Full Thrust version make its first flight?",
+    "answer": "December 2015.",
+    "doc_title": "Falcon 9"
+  },
+  {
+    "question": "What caused the delay of the first demonstration flight of Falcon 9 originally scheduled for September 2008?",
+    "answer": "Complexity and Cape Canaveral regulatory requirements.",
+    "doc_title": "Falcon 9"
+  },
+  {
+    "question": "What was the theoretical diffraction-limited resolution for an optical telescope with a mirror 2.5 m in diameter?",
+    "answer": "About 0.05 arcsec.",
+    "doc_title": "Hubble Space Telescope"
+  },
+  {
+    "question": "Who is known as the 'Mother of Hubble'?",
+    "answer": "Nancy Grace Roman.",
+    "doc_title": "Hubble Space Telescope"
+  },
+  {
+    "question": "What was the purpose of the Space Telescope Science Institute (STScI)?",
+    "answer": "To be responsible for the scientific operation of the telescope and the delivery of data products to astronomers.",
+    "doc_title": "Hubble Space Telescope"
+  },
+  {
+    "question": "What is the purpose of the Alpha Magnetic Spectrometer (AMS) on the ISS?",
+    "answer": "The AMS is intended to detect dark matter and answer other fundamental questions about the universe.",
+    "doc_title": "International Space Station"
+  },
+  {
+    "question": "Which module of the ISS contains environmental control systems and life-support systems?",
+    "answer": "The Tranquility module contains environmental control systems, life-support systems, a toilet, exercise equipment, and an observation cupola.",
+    "doc_title": "International Space Station"
+  },
+  {
+    "question": "What significant risk was suggested by data on bone loss and muscular atrophy for astronauts landing on a planet after a lengthy interplanetary cruise?",
+    "answer": "There would be a significant risk of fractures and movement problems if astronauts landed on a planet after a lengthy interplanetary cruise.",
+    "doc_title": "International Space Station"
+  },
+  {
+    "question": "What is the distance of the James Webb Space Telescope from the Sun–Earth L2 Lagrange point?",
+    "answer": "Its actual position varies between about 250,000 and 832,000 km (155,000–517,000 mi) from L2 as it orbits.",
+    "doc_title": "James Webb Space Telescope"
+  },
+  {
+    "question": "What is the maximum temperature that the James Webb Space Telescope must be kept under for infrared observations?",
+    "answer": "Webb must be kept under 50 K (−223.2 °C; −369.7 °F); otherwise, infrared radiation from the telescope itself would overwhelm its instruments.",
+    "doc_title": "James Webb Space Telescope"
+  },
+  {
+    "question": "Who was the project scientist managing the development of the James Webb Space Telescope?",
+    "answer": "John C. Mather was its project scientist.",
+    "doc_title": "James Webb Space Telescope"
+  },
+  {
+    "question": "What was the first uncrewed flight from Kennedy Space Center?",
+    "answer": "Apollo 4 (Apollo-Saturn 501) on November 9, 1967.",
+    "doc_title": "Kennedy Space Center"
+  },
+  {
+    "question": "Which mission made the first Moon landing?",
+    "answer": "Apollo 11, launched from Pad A on July 16, 1969.",
+    "doc_title": "Kennedy Space Center"
+  },
+  {
+    "question": "What is the purpose of the Florida University Space Research Consortium?",
+    "answer": "To advance Moon-to-Mars research.",
+    "doc_title": "Kennedy Space Center"
+  },
+  {
+    "question": "What was the primary purpose of the Lunar Gateway?",
+    "answer": "The Lunar Gateway was intended to serve as a staging point where Orion could rendezvous with Human Landing System lunar landers, transfer crews, and support lunar surface missions.",
+    "doc_title": "Lunar Gateway"
+  },
+  {
+    "question": "Which international partners were involved in the development of the Lunar Gateway?",
+    "answer": "The project was developed with international partners including the European Space Agency (ESA), the Japan Aerospace Exploration Agency (JAXA), the Canadian Space Agency (CSA), and the Mohammed Bin Rashid Space Centre (MBRSC) of the United Arab Emirates.",
+    "doc_title": "Lunar Gateway"
+  },
+  {
+    "question": "What orbit was selected for the Lunar Gateway?",
+    "answer": "A near-rectilinear halo orbit was selected, which reduced propulsion requirements.",
+    "doc_title": "Lunar Gateway"
+  },
+  {
+    "question": "What was the primary goal of the Spirit and Opportunity rovers?",
+    "answer": "The primary goal of the Spirit and Opportunity rovers was to investigate 'the history of water on Mars'.",
+    "doc_title": "Mars rover"
+  },
+  {
+    "question": "What are the four science goals of NASA's long-term Mars Exploration Program?",
+    "answer": "The four science goals of NASA's long-term Mars Exploration Program are: Determine whether life ever arose on Mars, Characterize the climate of Mars, Characterize the geology of Mars, Prepare for human exploration of Mars.",
+    "doc_title": "Mars rover"
+  },
+  {
+    "question": "What distinguishes mission objectives from science objectives in NASA's rover program?",
+    "answer": "Mission objectives are related to progress in space technology and development processes, while science objectives are met by the instruments during their mission in space.",
+    "doc_title": "Mars rover"
+  },
+  {
+    "question": "What did Shepard eat for breakfast before the launch?",
+    "answer": "Shepard ate a breakfast of steak and eggs with toast, coffee, and orange juice.",
+    "doc_title": "Mercury-Redstone 3"
+  },
+  {
+    "question": "What issue did Shepard face while waiting in the capsule before launch?",
+    "answer": "Shepard complained to the blockhouse crew that he had a severe need to urinate.",
+    "doc_title": "Mercury-Redstone 3"
+  },
+  {
+    "question": "What was the peak g-force experienced by Shepard during re-entry?",
+    "answer": "The peak g-force experienced by Shepard during re-entry was 11.6 g.",
+    "doc_title": "Mercury-Redstone 3"
+  },
+  {
+    "question": "What was the primary purpose of the Mir space station?",
+    "answer": "The station served as a microgravity research laboratory in which crews conducted experiments in biology, human biology, physics, astronomy, meteorology, and spacecraft systems with a goal of developing technologies required for permanent occupation of space.",
+    "doc_title": "Mir"
+  },
+  {
+    "question": "How many different nations had astronauts and cosmonauts visit the Mir space station?",
+    "answer": "105 cosmonauts and astronauts from 12 different nations visited the station.",
+    "doc_title": "Mir"
+  },
+  {
+    "question": "What was the longest single human spaceflight duration recorded on Mir?",
+    "answer": "Mir holds the record for the longest single human spaceflight, Valeri Polyakov, who spent 437 days on the station from 1994 until 1995.",
+    "doc_title": "Mir"
+  },
+  {
+    "question": "What was the proposed budget for New Horizons in FY2026?",
+    "answer": "The proposed budget for FY2026 would have cut funding for New Horizons.",
+    "doc_title": "New Horizons"
+  },
+  {
+    "question": "Who was the principal investigator of the New Horizons project?",
+    "answer": "Alan Stern was appointed as the project's principal investigator.",
+    "doc_title": "New Horizons"
+  },
+  {
+    "question": "When did the New Horizons spacecraft launch?",
+    "answer": "The probe finally lifted off on January 19, 2006.",
+    "doc_title": "New Horizons"
+  },
+  {
+    "question": "What are the four main science objectives of the Perseverance rover?",
+    "answer": "Looking for habitability, seeking biosignatures, caching samples, and preparing for humans.",
+    "doc_title": "Perseverance (rover)"
+  },
+  {
+    "question": "What is the purpose of the Mars Environmental Dynamics Analyzer (MEDA)?",
+    "answer": "To measure temperature, wind speed and direction, pressure, relative humidity, radiation, and dust particle size and shape.",
+    "doc_title": "Perseverance (rover)"
+  },
+  {
+    "question": "What was the first science campaign of the Perseverance rover called?",
+    "answer": "Crater Floor.",
+    "doc_title": "Perseverance (rover)"
+  },
+  {
+    "question": "Who served as mission director on all Gemini flights beginning with Gemini 6A?",
+    "answer": "Manned Space Flight for Mission Operations served as mission director on all Gemini flights beginning with Gemini 6A.",
+    "doc_title": "Project Gemini"
+  },
+  {
+    "question": "What was a major design improvement in the Gemini spacecraft compared to Mercury?",
+    "answer": "A major design improvement in Gemini was to locate all internal spacecraft systems in modular components, which could be independently tested and replaced when necessary.",
+    "doc_title": "Project Gemini"
+  },
+  {
+    "question": "What was the cost of the Gemini program from 1962 to 1967 in 1967 dollars?",
+    "answer": "$1.3 billion in 1967 dollars.",
+    "doc_title": "Project Gemini"
+  },
+  {
+    "question": "What was the first major repair performed in space on Skylab?",
+    "answer": "The first crew deployed a replacement heat shade and freed the jammed solar panels to save Skylab.",
+    "doc_title": "Skylab"
+  },
+  {
+    "question": "How long did the Skylab 4 crew spend in orbit?",
+    "answer": "The Skylab 4 crew spent 84 days in orbit.",
+    "doc_title": "Skylab"
+  },
+  {
+    "question": "What recreational activities were available to the Skylab crew?",
+    "answer": "The crew had a library, a music system, playing cards, a dartboard with darts, and balls to play with.",
+    "doc_title": "Skylab"
+  },
+  {
+    "question": "When did the first crewed Soyuz mission launch?",
+    "answer": "The first crewed Soyuz mission, Soyuz 1, launched on 23 April 1967.",
+    "doc_title": "Soyuz (spacecraft)"
+  },
+  {
+    "question": "What is the primary function of the descent module in the Soyuz spacecraft?",
+    "answer": "The descent module is used for launch and the journey back to Earth.",
+    "doc_title": "Soyuz (spacecraft)"
+  },
+  {
+    "question": "Which agency continued to develop and utilize the Soyuz spacecraft after the Soviet Union's dissolution?",
+    "answer": "Roscosmos, the Russian space agency, continued to develop and utilize the Soyuz.",
+    "doc_title": "Soyuz (spacecraft)"
+  },
+  {
+    "question": "What was the first orbiter built for the Space Shuttle program?",
+    "answer": "The first orbiter, Enterprise, was built in 1976 and used in Approach and Landing Tests (ALT), but had no orbital capability.",
+    "doc_title": "Space Shuttle"
+  },
+  {
+    "question": "How many astronauts were killed in the Challenger and Columbia accidents?",
+    "answer": "A total of 14 astronauts were killed in the accidents of Challenger in 1986 and Columbia in 2003.",
+    "doc_title": "Space Shuttle"
+  },
+  {
+    "question": "What was the purpose of the Shuttle Carrier Aircraft (SCA)?",
+    "answer": "The Shuttle Carrier Aircraft (SCA) was a specially modified Boeing 747 designed to carry the shuttle above it.",
+    "doc_title": "Space Shuttle"
+  },
+  {
+    "question": "What are the three types of space suits and their purposes?",
+    "answer": "The three types of space suits are IVA (intravehicular activity), EVA (extravehicular activity), and IEVA (intra/extravehicular activity). IVA suits are meant to be worn inside a pressurized spacecraft, EVA suits are used outside spacecraft for planetary exploration or spacewalks, and IEVA suits are designed for use both inside and outside the spacecraft.",
+    "doc_title": "Space suit"
+  },
+  {
+    "question": "What is the primary function of a space suit?",
+    "answer": "The primary function of a space suit is to provide protection from the harsh environment of outer space, including its vacuum, temperature extremes, radiation, and micrometeoroids.",
+    "doc_title": "Space suit"
+  },
+  {
+    "question": "What is the purpose of the tether in the SpaceX 'Starman suit'?",
+    "answer": "The tether in the SpaceX 'Starman suit' is used to feed air and electronic connections to the astronaut's thigh, providing protection against cabin depressurization.",
+    "doc_title": "Space suit"
+  },
+  {
+    "question": "What was the first variant of the Dragon spacecraft called?",
+    "answer": "Dragon 1",
+    "doc_title": "SpaceX Dragon"
+  },
+  {
+    "question": "In what year was the Dragon 2 spacecraft introduced?",
+    "answer": "2019",
+    "doc_title": "SpaceX Dragon"
+  },
+  {
+    "question": "Who is the CEO of SpaceX?",
+    "answer": "Elon Musk",
+    "doc_title": "SpaceX Dragon"
+  },
+  {
+    "question": "What is the nominal period that Crew Dragon typically remains docked to the ISS?",
+    "answer": "180 days",
+    "doc_title": "SpaceX Dragon 2"
+  },
+  {
+    "question": "How many astronauts can Crew Dragon carry in normal operations?",
+    "answer": "Two to four crew members",
+    "doc_title": "SpaceX Dragon 2"
+  },
+  {
+    "question": "What type of fabric is used to make the spacesuit worn by crew members on Crew Dragon?",
+    "answer": "Nomex, a fire-retardant fabric similar to Kevlar",
+    "doc_title": "SpaceX Dragon 2"
+  },
+  {
+    "question": "What is the purpose of the fire suppression system on the Starship?",
+    "answer": "The fire suppression system, which uses gaseous nitrogen to purge the engine bay during flight, was upgraded after flight 7.",
+    "doc_title": "SpaceX Starship (spacecraft)"
+  },
+  {
+    "question": "How much payload is the Starship Human Landing System designed to land on the Moon?",
+    "answer": "When fully fueled, Starship HLS is designed to land 100 t (220,000 lb) of payload on the Moon.",
+    "doc_title": "SpaceX Starship (spacecraft)"
+  },
+  {
+    "question": "What was the first public articulation of SpaceX's plans for a reusable rocket system?",
+    "answer": "In October 2012, the company made the first public articulation of plans to develop a fully reusable rocket system with substantially greater capabilities than SpaceX's existing Falcon 9.",
+    "doc_title": "SpaceX Starship (spacecraft)"
+  },
+  {
+    "question": "What was the peak speed of Sputnik 1?",
+    "answer": "about 8 km/s (18,000 mph)",
+    "doc_title": "Sputnik 1"
+  },
+  {
+    "question": "How long did it take Sputnik 1 to complete each orbit?",
+    "answer": "96.20 minutes",
+    "doc_title": "Sputnik 1"
+  },
+  {
+    "question": "On what date did Sputnik 1 burn up while reentering Earth's atmosphere?",
+    "answer": "4 January 1958",
+    "doc_title": "Sputnik 1"
+  },
+  {
+    "question": "What feelings did Gagarin experience when he was suggested to make the flight?",
+    "answer": "He felt very happy—to be the first in space, to engage in an unprecedented duel with Nature.",
+    "doc_title": "Vostok 1"
+  },
+  {
+    "question": "What was the responsibility Gagarin felt during his flight?",
+    "answer": "It is responsibility to all Soviet people, to all mankind, to its present and its future.",
+    "doc_title": "Vostok 1"
+  },
+  {
+    "question": "What did Gagarin report about the flight's status during his transmission?",
+    "answer": "The flight is proceeding successfully. Spusk-1 is operating normally.",
+    "doc_title": "Vostok 1"
+  },
+  {
+    "question": "When were Voyager 1 and Voyager 2 launched?",
+    "answer": "They were launched in 1977.",
+    "doc_title": "Voyager program"
+  },
+  {
+    "question": "What significant event occurred on August 25, 2012, regarding Voyager 1?",
+    "answer": "Data from Voyager 1 indicated that it had entered interstellar space.",
+    "doc_title": "Voyager program"
+  },
+  {
+    "question": "What is the purpose of the record carried by the Voyager spacecraft?",
+    "answer": "The record is intended as a combination time capsule and an interstellar message to any civilization, alien or far-future human, that may recover either of the Voyagers.",
+    "doc_title": "Voyager program"
+  }
+]

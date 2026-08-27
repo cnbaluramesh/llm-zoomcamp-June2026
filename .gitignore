@@ -1,0 +1,6 @@
+.env
+logs/
+data/knowledge_base*.db*
+__pycache__/
+*.pyc
+.dlt/

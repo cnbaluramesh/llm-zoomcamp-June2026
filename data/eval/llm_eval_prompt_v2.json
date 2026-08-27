@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What was the goal proposed by Kennedy for the Apollo program?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "Who was the Apollo Program Director from January 1964 until the first human landing in July 1969?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "How many astronauts were assigned to fly missions in the Apollo program?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "What is the purpose of the Lunar Codex in the Artemis program?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "When did the Artemis I mission take place?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "What types of spacesuits are used in the Artemis program?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "What did the first NASA astronauts comment about their flight to Moscow regarding the Baikonur Cosmodrome?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "What was the original name of the region where the Baikonur Cosmodrome is located before it was established?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "What environmental impact was noted by Russian scientist Afanasiy Ilich Tobonov in the 1990s?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "What was the total amount of funding awarded to Boeing for the Starliner program under various contracts?",
+    "correctness": 3,
+    "groundedness": 4
+  },
+  {
+    "question": "What was the reason for NASA's decision to delay the announcement of the CCtCap contract?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "What issues did Boeing face with the oxidizer valves in the Starliner program?",
+    "correctness": 4,
+    "groundedness": 4
+  },
+  {
+    "question": "What was the primary purpose of the Cassini–Huygens mission?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "When did the Cassini probe enter Saturn's orbit?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "What was the fate of the Cassini probe at the end of its mission?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "When was the Curiosity rover launched?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "What is the main scientific goal of the Mars Science Laboratory mission?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "What is the name of the camera on Curiosity's robotic arm that acquires microscopic images?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "What is extravehicular activity (EVA)?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "Who conducted the first spacewalk and when?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "What procedure did NASA employ to reduce the risk of decompression sickness during EVAs from the International Space Station?",
+    "correctness": 3,
+    "groundedness": 3
+  },
+  {
+    "question": "What is the payload capacity of the Falcon 9 to low Earth orbit?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "When did the Falcon 9 Full Thrust version make its first flight?",
+    "correctness": 0,
+    "groundedness": 0
+  },
+  {
+    "question": "What caused the delay of the first demonstration flight of Falcon 9 originally scheduled for September 2008?",
+    "correctness": 5,
+    "groundedness": 0
+  },
+  {
+    "question": "What was the theoretical diffraction-limited resolution for an optical telescope with a mirror 2.5 m in diameter?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "Who is known as the 'Mother of Hubble'?",
+    "correctness": 5,
+    "groundedness": 0
+  },
+  {
+    "question": "What was the purpose of the Space Telescope Science Institute (STScI)?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "What is the purpose of the Alpha Magnetic Spectrometer (AMS) on the ISS?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "Which module of the ISS contains environmental control systems and life-support systems?",
+    "correctness": 5,
+    "groundedness": 5
+  },
+  {
+    "question": "What significant risk was suggested by data on bone loss and muscular atrophy for astronauts landing on a planet after a lengthy interplanetary cruise?",
+    "correctness": 5,
+    "groundedness": 5
+  }
+]

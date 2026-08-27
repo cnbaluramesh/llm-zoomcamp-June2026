@@ -1,0 +1,12 @@
+{
+  "prompt_v1": {
+    "avg_correctness": 4.7,
+    "avg_groundedness": 4.533,
+    "n": 30
+  },
+  "prompt_v2": {
+    "avg_correctness": 4.667,
+    "avg_groundedness": 4.367,
+    "n": 30
+  }
+}
