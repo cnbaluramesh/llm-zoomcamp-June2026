@@ -18,6 +18,25 @@ Built as a capstone project for the LLM Zoomcamp.
 
 ![Monitoring dashboard with usage, latency, method and feedback charts](docs/screenshot_dashboard.png)
 
+## Evaluation criteria map
+
+Where each review criterion is evidenced in this repo:
+
+| Criterion | Evidence |
+|---|---|
+| Problem description | [Problem statement](#problem-statement) |
+| Retrieval flow (KB + LLM) | `src/retrieval.py`, `src/generate.py`, SQLite KB in `data/` |
+| Retrieval evaluation | `eval/eval_retrieval.py`, results + discussion in [Evaluation](#evaluation) |
+| LLM evaluation | `eval/eval_llm.py`, results + discussion in [Evaluation](#evaluation) |
+| Interface (UI) | `app/app.py` (Streamlit chat), `scripts/ask.py` (CLI) — screenshots above |
+| Ingestion pipeline (automated tool) | `src/ingest_dlt.py` (dlt pipeline → SQLite) |
+| Monitoring (feedback + dashboard ≥5 charts) | `src/monitoring.py`, `app/app.py` Monitoring tab (screenshots above) |
+| Containerization (everything in docker-compose) | `Dockerfile`, `docker-compose.yml` |
+| Reproducibility | [Quick start](#quick-start), committed corpus + eval data, pinned `requirements.txt` |
+| Best practice: hybrid search | `src/retrieval.py` (BM25 + dense + RRF), evaluated in [Evaluation](#evaluation) |
+| Best practice: document re-ranking | `src/rerank.py`, evaluated in [Evaluation](#evaluation) |
+| Best practice: query rewriting | `src/retrieval.py::rewrite_query`, evaluated in [Evaluation](#evaluation) |
+
 ## Problem statement
 
 General-purpose chatbots answer space-exploration questions from pre-training memory, so facts
